@@ -7,9 +7,8 @@ function icewand() {
 		ins.direction = direc*90;
 		ins.image_angle = direc*90;
 		ins.stats = 2;
-		global.ammonow -= 1;
 		//ammo
-		global.ammo[global.handle] = global.ammonow;	
+		global.ammo[global.handle] -= 1;	
 	}
 	if(attecktime == 30){
 		show_log("Atteck Ready",c_white);

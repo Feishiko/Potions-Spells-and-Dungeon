@@ -52,7 +52,8 @@ if(drop == 1 and bag == 1){
 				ins.ammo = global.ammo[i];
 				ins.taken = true;
 				ins.stats = idd;
-				ins.find = 1;	
+				ins.find = 1;
+				global.handle = -1;
 			}
 			
 			show_log(global.name + " Drop a " + get_item_name(idd),c_gray);
@@ -76,8 +77,7 @@ if(bag == 1 and drop = 0){
 		if(global.bag[i] <= 12){
 			global.bag[i] = 0;
 		}else{
-			global.handle = i;
-			global.ammonow = global.ammo[i];	
+			global.handle = i;	
 		}
 	}
 }

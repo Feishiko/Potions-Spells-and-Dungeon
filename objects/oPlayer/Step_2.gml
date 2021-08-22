@@ -7,14 +7,15 @@ if(die == 0){
 
 	hp();
 	///weapon
-	switch(global.hand){
-		case 13: sword();break;
-		case 14: push();break;
-		case 15: if(global.ammonow >= 1){firewand();}break;
-		case 16: if(global.ammonow >= 1){icewand();}break;
-		case 17: if(global.ammonow >= 1){fastwand();}break;
+	if(global.handle >= 0){
+		switch(global.hand){
+			case 13: sword();break;
+			case 14: push();break;
+			case 15: if(global.ammo[global.handle] >= 1){firewand();}break;
+			case 16: if(global.ammo[global.handle] >= 1){icewand();}break;
+			case 17: if(global.ammo[global.handle] >= 1){fastwand();}break;
+		}
 	}
-	
 	//Fast Atteck
 	if(keyboard_check_pressed(ord("C"))){
 		for(var i = 0;i < 6;i++){

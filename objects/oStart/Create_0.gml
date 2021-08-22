@@ -35,7 +35,7 @@ global.ammo[2] = -1;
 global.ammo[3] = -1;
 global.ammo[4] = -1;
 global.ammo[5] = -1;
-global.ammonow = -1;
+//global.ammonow = -1;
 
 
 for(var i = 1;i <= 9;i++){

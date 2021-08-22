@@ -4,7 +4,7 @@ if(opened == 1){
 	image_xscale = -1;	
 }
 //open
-if(keyboard_check_pressed(vk_shift) && opened == 0){
+if(keyboard_check_pressed(vk_shift) && opened == 0 && place_meeting(x, y, oPlayer)){
 	opened = 1;
 	var items;
 	items = instance_create_layer(x,y,"Enemy",oItem);//Create a item
