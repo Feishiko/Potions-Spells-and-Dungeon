@@ -9,7 +9,7 @@ function icewand() {
 		ins.stats = 2;
 		global.ammonow -= 1;
 		//ammo
-		global.ammo[nums] = global.ammonow;	
+		global.ammo[global.handle] = global.ammonow;	
 	}
 	if(attecktime == 30){
 		show_log("Atteck Ready",c_white);

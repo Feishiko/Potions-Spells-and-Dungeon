@@ -71,11 +71,12 @@ if(bag == 1 and drop = 0){
 	}
 	for(i = 0;i <= 5;i++){
 	if(keyboard_check_pressed(ord(num[i]))){
-		nums = i;
+		global.nums = i;
 		use(global.bag[i]);
 		if(global.bag[i] <= 12){
 			global.bag[i] = 0;
 		}else{
+			global.handle = i;
 			global.ammonow = global.ammo[i];	
 		}
 	}

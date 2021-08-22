@@ -13,6 +13,8 @@ global.lightrange = 128;//default is 128
 global.font = 0;
 global.event = 0;//0 none 1 MoreEnemy 2 Bigroom 3 Lavarising
 global.show = 0;//show story
+global.nums = -1;
+global.handle = -1;
 
 //随机数初始化
 randomize();
