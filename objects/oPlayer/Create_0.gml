@@ -14,6 +14,7 @@ num[2] = "3";
 num[3] = "4";
 num[4] = "5";
 num[5] = "6";
+nums = -1;
 ///start
 instance_create_layer(x,y,"Instances",oUp);
 

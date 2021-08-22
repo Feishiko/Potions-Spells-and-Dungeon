@@ -10,9 +10,9 @@ if(die == 0){
 	switch(global.hand){
 		case 13: sword();break;
 		case 14: push();break;
-		case 15: firewand();break;
-		case 16: icewand();break;
-		case 17: fastwand();break;
+		case 15: if(global.ammonow >= 1){firewand();}break;
+		case 16: if(global.ammonow >= 1){icewand();}break;
+		case 17: if(global.ammonow >= 1){fastwand();}break;
 	}
 	
 	//Fast Atteck
@@ -57,9 +57,10 @@ if(die == 1){
 	}
 }
 //Font Changed
+/*
 if(keyboard_check_pressed(ord("F"))){
 	global.font++;	
 }
 if(global.font > 3){
 	global.font = 0;	
-}
+}*/

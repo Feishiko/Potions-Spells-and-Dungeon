@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 find = 0;
+taken = false;
 stats = -1;/*
 13 sword
 14 pushgloves
@@ -11,3 +12,7 @@ stats = -1;/*
 19 boiled water
 ASCII "/"
 */
+ammo = 0;
+if(stats >= 15 && taken == false){
+	ammo = 5;	
+}

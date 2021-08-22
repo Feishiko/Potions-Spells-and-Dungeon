@@ -43,6 +43,16 @@ if(drop == 1 and bag == 1){
 				ins = instance_create_layer(x,y,"Enemy",oSpell);
 				ins.stats = idd;
 				ins.find = 1;
+			}else if(idd >= 13 && idd < 15){
+				ins = instance_create_layer(x,y,"Enemy",oItem);
+				ins.stats = idd;
+				ins.find = 1;	
+			}else if(idd >= 15){
+				ins = instance_create_layer(x,y,"Enemy",oItem);
+				ins.ammo = global.ammo[i];
+				ins.taken = true;
+				ins.stats = idd;
+				ins.find = 1;	
 			}
 			
 			show_log(global.name + " Drop a " + get_item_name(idd),c_gray);
@@ -52,12 +62,22 @@ if(drop == 1 and bag == 1){
 if(bag == 1 and drop = 0){
 	for(var i = 0;i <= 5;i++){
 		draw_set_color(c_white);
-		draw_text(camera_get_view_width(view_camera[0])-220,36+i*20,string(i+1)+"."+get_item_name(global.bag[i]));		
+		//Wands
+		if(global.bag[i] <= 14){
+			draw_text(camera_get_view_width(view_camera[0])-220,36+i*20,string(i+1)+"."+get_item_name(global.bag[i]));		
+		}else{
+			draw_text(camera_get_view_width(view_camera[0])-220,36+i*20,string(i+1)+"."+get_item_name(global.bag[i])+"[" + string(global.ammo[i]) + "]");
+		}
 	}
 	for(i = 0;i <= 5;i++){
 	if(keyboard_check_pressed(ord(num[i]))){
-		use(global.bag[i]);	
-		global.bag[i] = 0;
+		nums = i;
+		use(global.bag[i]);
+		if(global.bag[i] <= 12){
+			global.bag[i] = 0;
+		}else{
+			global.ammonow = global.ammo[i];	
+		}
 	}
 }
 }

@@ -6,6 +6,13 @@ function pick() {
 		for(var i = 0;i <= 5;i++){
 			if(global.bag[i] = 0){
 				global.bag[i] = item.stats;
+				if(item.stats >= 15 && item.taken == false){
+					item.ammo = 5;	
+				}
+				item.taken = true;
+				if(item.stats >= 15){//wands
+					global.ammo[i] = item.ammo;	
+				}
 				if(item.stats <= 8){
 					show_log(string(global.name) + " picks up a Potion.",c_white);	
 				}else if(item.stats >= 9 && item.stats <= 12){

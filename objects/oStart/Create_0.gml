@@ -27,6 +27,13 @@ global.mymaxhp = irandom_range(3,6);
 global.myhp = global.mymaxhp;
 global.sped = 0;
 global.hand = 0;//hand what weapon
+global.ammo[0] = -1;
+global.ammo[1] = -1;
+global.ammo[2] = -1;
+global.ammo[3] = -1;
+global.ammo[4] = -1;
+global.ammo[5] = -1;
+global.ammonow = -1;
 
 
 for(var i = 1;i <= 9;i++){

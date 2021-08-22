@@ -1,7 +1,7 @@
 function sword() {
 
 
-	if(attecktime >= 240 && keyboard_check_released(ord("X"))){
+	if(attecktime >= 140 && keyboard_check_released(ord("X"))){
 		var ins;
 		ins = instance_create_layer(x + 16,y + 16,"Enemy",oWave);
 		ins.direction = direc*90;
@@ -9,7 +9,7 @@ function sword() {
 		ins.stats = 3;
 		ins.times = 2;
 	}
-	if(attecktime == 240){
+	if(attecktime == 140){
 		show_log("Atteck Ready",c_white);
 		text_fly(x,y,"*READY*");
 	}
