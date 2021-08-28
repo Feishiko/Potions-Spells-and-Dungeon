@@ -4,8 +4,6 @@
 switch(global.font){
 	case 0: draw_set_font(font_log);break;
 	case 1: draw_set_font(font_log2)break;
-	case 2: draw_set_font(font_log3)break;
-	case 3: draw_set_font(font_log4)break;
 }
 
 for(var i = 0;i <= 5;i++){

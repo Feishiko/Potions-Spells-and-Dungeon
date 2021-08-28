@@ -1,5 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
+//HELP
+if(!instance_exists(oHelp) && keyboard_lastchar == "?"){
+	instance_create_depth(0, 0, -1000, oHelp);	
+}
 if(die == 0){
 	move();
 

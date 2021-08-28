@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},"order":1,},
+    {"id":{"name":"rMenu","path":"rooms/rMenu/rMenu.yy",},"order":1,},
     {"id":{"name":"sGround","path":"sprites/sGround/sGround.yy",},"order":3,},
     {"id":{"name":"sEnemy","path":"sprites/sEnemy/sEnemy.yy",},"order":5,},
     {"id":{"name":"sPotion","path":"sprites/sPotion/sPotion.yy",},"order":7,},
@@ -8,6 +9,7 @@
     {"id":{"name":"sWave","path":"sprites/sWave/sWave.yy",},"order":11,},
     {"id":{"name":"sUp","path":"sprites/sUp/sUp.yy",},"order":13,},
     {"id":{"name":"sDown","path":"sprites/sDown/sDown.yy",},"order":15,},
+    {"id":{"name":"oHelp","path":"objects/oHelp/oHelp.yy",},"order":33,},
     {"id":{"name":"sChest","path":"sprites/sChest/sChest.yy",},"order":17,},
     {"id":{"name":"sItem","path":"sprites/sItem/sItem.yy",},"order":19,},
     {"id":{"name":"floor_create","path":"scripts/floor_create/floor_create.yy",},"order":1,},
@@ -32,8 +34,6 @@
     {"id":{"name":"equip","path":"scripts/equip/equip.yy",},"order":39,},
     {"id":{"name":"font_log","path":"fonts/font_log/font_log.yy",},"order":1,},
     {"id":{"name":"font_log2","path":"fonts/font_log2/font_log2.yy",},"order":3,},
-    {"id":{"name":"font_log3","path":"fonts/font_log3/font_log3.yy",},"order":5,},
-    {"id":{"name":"font_log4","path":"fonts/font_log4/font_log4.yy",},"order":7,},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":1,},
     {"id":{"name":"oGround","path":"objects/oGround/oGround.yy",},"order":3,},
     {"id":{"name":"oCreator","path":"objects/oCreator/oCreator.yy",},"order":5,},
@@ -42,6 +42,7 @@
     {"id":{"name":"oWave","path":"objects/oWave/oWave.yy",},"order":11,},
     {"id":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"order":9,},
     {"id":{"name":"oPickup","path":"objects/oPickup/oPickup.yy",},"order":19,},
+    {"id":{"name":"oStaff","path":"objects/oStaff/oStaff.yy",},"order":34,},
     {"id":{"name":"oPotion","path":"objects/oPotion/oPotion.yy",},"order":15,},
     {"id":{"name":"oSpell","path":"objects/oSpell/oSpell.yy",},"order":17,},
     {"id":{"name":"oDown","path":"objects/oDown/oDown.yy",},"order":21,},
@@ -50,8 +51,9 @@
     {"id":{"name":"oFlyText","path":"objects/oFlyText/oFlyText.yy",},"order":27,},
     {"id":{"name":"oChest","path":"objects/oChest/oChest.yy",},"order":29,},
     {"id":{"name":"oItem","path":"objects/oItem/oItem.yy",},"order":31,},
-    {"id":{"name":"rBegin","path":"rooms/rBegin/rBegin.yy",},"order":1,},
-    {"id":{"name":"rGame","path":"rooms/rGame/rGame.yy",},"order":3,},
+    {"id":{"name":"rBegin","path":"rooms/rBegin/rBegin.yy",},"order":0,},
+    {"id":{"name":"oMenu","path":"objects/oMenu/oMenu.yy",},"order":32,},
+    {"id":{"name":"rGame","path":"rooms/rGame/rGame.yy",},"order":2,},
   ],
   "Options": [
     {"name":"Linux","path":"options/linux/options_linux.yy",},
@@ -69,6 +71,7 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"rBegin","path":"rooms/rBegin/rBegin.yy",},},
+    {"roomId":{"name":"rMenu","path":"rooms/rMenu/rMenu.yy",},},
     {"roomId":{"name":"rGame","path":"rooms/rGame/rGame.yy",},},
   ],
   "Folders": [
