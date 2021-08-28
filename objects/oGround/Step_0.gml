@@ -5,4 +5,3 @@ if(collision_circle(x,y,global.lightrange,oPlayer,0,0) and collision_line(x,y,oP
 }else if(!collision_circle(x,y,global.lightrange,oPlayer,0,0)){
 	visible = false;	
 }
-

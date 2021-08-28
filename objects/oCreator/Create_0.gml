@@ -3,9 +3,9 @@
 //global.Floor++;//层数加一
 plus = 0;
 pluss = 0;
-randomevent = irandom(100-global.Floor);
+randomevent = irandom(90-global.Floor);
 global.event = 0;
-if(randomevent <= 10){
+if(randomevent <= 20){
 	event = random_event();	
 }
 if global.Floor == 10 {
