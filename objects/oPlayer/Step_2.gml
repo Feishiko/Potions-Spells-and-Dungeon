@@ -50,7 +50,7 @@ if(die == 0){
 }*/
 if(global.myhp <= 0 && die == 0){
 	show_log(global.name + " Failed!",c_white);
-	show_log(global.name + " has Dead in the " + string(global.Floor) + " Floor",c_white);
+	show_log(global.name + " has died in " + "Floor " + string(global.Floor),c_white);
 	show_log(global.name + "'s Score is " + string(global.scoree),c_white);
 	show_log("Press R to Continue",c_white);
 	die = 1;

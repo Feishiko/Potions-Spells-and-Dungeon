@@ -1,0 +1,45 @@
+0.2
+Fixed the Control
+Add FastAttack and FastDig
+Add FontChange
+
+0.21
+Add Score
+Change the FloorCreator
+Fixed The bug of jump two floors
+Fixed The bug of drop items
+Fixed The Hit-Point HUD
+Fixed AI's Move Bug
+Pause the game when open the bag
+Log will show Potion's name
+As you drink the potion,next time you'll find the potion's effect
+Add Attack
+Add random Event
+New Tiles!
+
+0.22
+Strong Lava
+Fixed Enemy Die
+Fixed Down Floor is too Next
+Fixed High Speed into the Wall
+
+0.23
+Flying words
+More Weapons
+New Type Floor
+Start With NOTHING
+
+0.3.0
+Better Movement
+Weapon System Bug Fixed
+Limited Wands Ammos
+Equipment Ststem Bug Fixed
+Chest Open Bug Fixed
+Add a Menu
+Add a Help Page
+Add a Staff Page
+A Bigger Range for Pick up Weapons
+Dig Good
+Enemy Movements Bug
+Frequency Random Events
+More Enemy

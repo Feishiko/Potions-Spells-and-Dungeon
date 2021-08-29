@@ -11,7 +11,7 @@ function firewand() {
 		global.ammo[global.handle] -= 1;	
 	}
 	if(attecktime == 30){
-		show_log("Atteck Ready",c_white);
+		show_log("Attack Ready",c_white);
 		text_fly(x,y,"*READY*");
 	}
 	if(keyboard_check(ord("X")) && bag == 0){

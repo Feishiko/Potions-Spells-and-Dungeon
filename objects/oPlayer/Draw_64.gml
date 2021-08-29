@@ -12,13 +12,13 @@ if(global.event > 0){
 if(keyboard_check_pressed(ord("W")) && bag == 0 && drop == 0){//Open Bag
 	//draw_rectangle_color(window_get_width()-200,32,window_get_width()-32,200,c_black,c_black,c_black,c_black,false);
 	bag = 1;
-	show_log(global.name + " Open the Bag,Which want to Use?",c_white);
+	show_log(global.name + " Open the Bag, What do you want to use?",c_white);
 }else if(keyboard_check_pressed(ord("W")) && bag == 1 && drop == 0){
 	bag = 0
 }
 
 if(keyboard_check_pressed(ord("D")) and bag == 0 and drop == 0){//Drop
-	show_log(global.name+" Open the Bag,Which want to Drop?",c_white);
+	show_log(global.name+" Open the Bag, What do you want to drop?",c_white);
 	bag = 1;
 	drop = 1;
 }else if(keyboard_check_pressed(ord("D")) and bag == 1 and drop == 1){

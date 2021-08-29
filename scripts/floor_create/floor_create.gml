@@ -78,9 +78,9 @@ function floor_create(argument0, argument1, argument2) {
 	if(global.Floor == 1 && global.show == 0){
 		//Stroy
 		global.show = 1;
-		show_log("AFTER THE WAR,EVERYTHING HAS GONE",c_white);
-		show_log("ONLY A FEW HUMAN ALIVE BUT BAD IN NOW.",c_white);
-		show_log("FOR THE HUMAN'S FUTURE,HUMAN'S HOPE",c_white);
+		show_log("AFTER THE WAR, EVERYTHING HAS GONE",c_white);
+		show_log("ONLY A FEW HUMAN ALIVE, BUT IN BAD CONDITION.",c_white);
+		show_log("FOR THE HUMAN'S FUTURE, HUMAN'S HOPE",c_white);
 		show_log("---YOU,NEED TO FIND THE HEART UNDER THIS DUNGEON!",c_white);
 		show_log(string(global.name) + " Enter the Dungeon.",c_white);
 	}
