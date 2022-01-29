@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-draw_text_color(30,45,string(global.myhp)+"/"+string(global.mymaxhp),c_white,c_white,c_white,c_white,1)
+draw_text_color(30,48,string(global.myhp)+"/"+string(global.mymaxhp),c_white,c_white,c_white,c_white,1)
 draw_text_color(30,30,"HP ",c_white,c_white,c_white,c_white,1)
 for(var i = 0;i < global.myhp;i++){
 	draw_text_color(30+30+i*15,30,"#",c_white,c_white,c_white,c_white,1);
@@ -12,13 +12,13 @@ if(global.event > 0){
 if(keyboard_check_pressed(ord("W")) && bag == 0 && drop == 0){//Open Bag
 	//draw_rectangle_color(window_get_width()-200,32,window_get_width()-32,200,c_black,c_black,c_black,c_black,false);
 	bag = 1;
-	show_log(global.name + " Open the Bag, What do you want to use?",c_white);
+	show_log(global.name + " opens the Bag, What do you want to use?",c_white);
 }else if(keyboard_check_pressed(ord("W")) && bag == 1 && drop == 0){
 	bag = 0
 }
 
 if(keyboard_check_pressed(ord("D")) and bag == 0 and drop == 0){//Drop
-	show_log(global.name+" Open the Bag, What do you want to drop?",c_white);
+	show_log(global.name+" opens the Bag, What do you want to drop?",c_white);
 	bag = 1;
 	drop = 1;
 }else if(keyboard_check_pressed(ord("D")) and bag == 1 and drop == 1){
@@ -28,7 +28,7 @@ if(keyboard_check_pressed(ord("D")) and bag == 0 and drop == 0){//Drop
 if(drop == 1 and bag == 1){
 		for(var i = 0;i <= 5;i++){
 		draw_set_color(c_white);
-		draw_text(camera_get_view_width(view_camera[0])-220,36+i*20,string(i+1)+"."+get_item_name(global.bag[i]));		
+		draw_text(camera_get_view_width(view_camera[0])-280,36+i*22,string(i+1)+"."+get_item_name(global.bag[i]));		
 	}
 	for(i = 0;i <= 5;i++){
 		if(keyboard_check_pressed(ord(i+1))){
@@ -56,7 +56,7 @@ if(drop == 1 and bag == 1){
 				global.handle = -1;
 			}
 			
-			show_log(global.name + " Drop a " + get_item_name(idd),c_gray);
+			show_log(global.name + " drops a " + get_item_name(idd),c_gray);
 		}
 	}
 }
@@ -65,9 +65,9 @@ if(bag == 1 and drop = 0){
 		draw_set_color(c_white);
 		//Wands
 		if(global.bag[i] <= 14){
-			draw_text(camera_get_view_width(view_camera[0])-220,36+i*20,string(i+1)+"."+get_item_name(global.bag[i]));		
+			draw_text(camera_get_view_width(view_camera[0])-280,36+i*22,string(i+1)+"."+get_item_name(global.bag[i]));		
 		}else{
-			draw_text(camera_get_view_width(view_camera[0])-220,36+i*20,string(i+1)+"."+get_item_name(global.bag[i])+"[" + string(global.ammo[i]) + "]");
+			draw_text(camera_get_view_width(view_camera[0])-280,36+i*22,string(i+1)+"."+get_item_name(global.bag[i])+"[" + string(global.ammo[i]) + "]");
 		}
 	}
 	for(i = 0;i <= 5;i++){

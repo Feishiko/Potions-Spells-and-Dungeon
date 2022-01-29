@@ -7,6 +7,6 @@ switch(global.font){
 }
 
 for(var i = 0;i <= 5;i++){
-	draw_text(32,camera_get_view_height(view_camera[0])-32-18*i,global.log[i])
+	draw_text(32,camera_get_view_height(view_camera[0])-32-24*i,global.log[i])
 }
 
